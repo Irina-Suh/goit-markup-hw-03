@@ -137,6 +137,7 @@ margin-left: auto;
 /* --------SOLUTIONS-------------- */
 .solutions{
     background: #2e2f42;
+    padding: 188px 0;
 }
 
 h1{
@@ -153,18 +154,17 @@ h1{
 
 .solutions-container{
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-.btn-container{
-display: flex;
-justify-content: center;
-}
+
    
 
 
 
 .btn {
+    display: block;
 background: #4d5ae5;
 cursor: pointer;
 font-family: inherit; /* "Roboto", sans-serif; */
@@ -173,11 +173,11 @@ font-family: inherit; /* "Roboto", sans-serif; */
     line-height: 150%;
     letter-spacing: 0.04em;
     color: #ffffff;
-        width: 169px;
+        min-width: 169px;
         height: 56px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         border-radius: 4px;
-        border: 0;           
+        border: none;           
             display: block;
             margin: 0;
 }
@@ -214,7 +214,7 @@ ul {
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     
 }
 
@@ -265,7 +265,7 @@ ul {
 .team-item{
 
     background: #fff;
-    /* border-radius: 0 0 4px 4px;   */
+    border-radius: 0px 0px 4px 4px;
         width:  calc((100% - 72px) / 4);
         height: 380px;
 }
@@ -275,7 +275,7 @@ ul {
         justify-content: center;
         flex-direction: column;
         gap: 8px;
-        padding: 32px 16px;
+        padding: 32px 0 32px;
 }
 
 .title-team{
@@ -285,6 +285,8 @@ ul {
     letter-spacing: 0.02em;
    text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px
+    
 }
 
 .text-team{
@@ -309,7 +311,7 @@ ul {
 
 .portfolio-item {
    
-    /* border: 1px solid #e7e9fc; */
+    
     flex-basis: calc((100% - 120px) / 6);
 }
 .portfolio-cont{
@@ -318,7 +320,8 @@ display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 8px;
-    padding: 32px 15px;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
 } 
 
 .title-portfolio{
@@ -349,6 +352,8 @@ display: flex;
 
 .pidval{
     background: #2e2f42;
+    padding-top: 100px;
+        padding-bottom: 100px;
     
     
 }
@@ -357,13 +362,13 @@ display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-top: 100px ;
-    padding-bottom: 100px;
+   
        
    
 }
 
 .webstudio-pidval{
+    display: inline-block;
 font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
